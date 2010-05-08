@@ -1,5 +1,7 @@
 An updated version of the Textile plugin for ExpressionEngine 2.x previously adapted for 2.x by F. Albrecht and distributed via the EE Forums. I've made a few additional changes so it will show up in the ExpressionEngine Control Panel.
 
+Original forum thread: http://expressionengine.com/forums/viewthread/137184/
+
 h3. Installation
 
 Copy the 'textile' folder to the /system/expressionengine/third_party folder.

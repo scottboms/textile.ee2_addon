@@ -8,7 +8,7 @@
  * @author		Dean Allen
  * @copyright	Copyright (c) 2003-2004 Dean Allen
  * @link		http://textism.com/tools/textile/
- * @version		2.0 v2779		
+ * @version		2.0.1 v2779		
  */
 
 // Should we even be here?
@@ -35,7 +35,7 @@ T E X T I L E
 
 A Humane Web Text Generator
 
-Version 2.0
+Version 2.0.1
 
 Copyright (c) 2003-2004, Dean Allen <dean@textism.com>
 All rights reserved.
@@ -43,7 +43,7 @@ All rights reserved.
 Thanks to Carlo Zottmann <carlo@g-blog.net> for refactoring
 Textile's procedural code into a class framework
 
-Additions and fixes Copyright (c) 2006 Alex Shiels http://thresholdstate.com/
+Additions and fixes Copyright (c) 2006 Alex Shiels http://thresholdstate.com and (c) 2011 Scott Boms http://scottboms.com
 
 _____________
 L I C E N S E
@@ -77,7 +77,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 $plugin_info = array(
 						'pi_name'			=> 'Textile',
-						'pi_version'		=> '1.1.1 (2.0.0 r2779)',
+						'pi_version'		=> '2.0.1',
 						'pi_author'			=> 'Dean Allen',
 						'pi_author_url'		=> 'http://textism.com/tools/textile/',
 						'pi_description'	=> 'A Humane Web Text Generator',
@@ -85,20 +85,20 @@ $plugin_info = array(
 					);
 					
 // define these before including this file to override the standard glyphs
-@define('txt_quote_single_open',  '&#8216;');
-@define('txt_quote_single_close', '&#8217;');
-@define('txt_quote_double_open',  '&#8220;');
-@define('txt_quote_double_close', '&#8221;');
-@define('txt_apostrophe',		  '&#8217;');
-@define('txt_prime',			  '&#8242;');
-@define('txt_prime_double', 	  '&#8243;');
-@define('txt_ellipsis', 		  '&#8230;');
-@define('txt_emdash',			  '&#8212;');
-@define('txt_endash',			  '&#8211;');
-@define('txt_dimension',		  '&#215;');
-@define('txt_trademark',		  '&#8482;');
-@define('txt_registered',		  '&#174;');
-@define('txt_copyright',		  '&#169;');
+@define('txt_quote_single_open',  '&lsquo;');
+@define('txt_quote_single_close', '&rsquo;');
+@define('txt_quote_double_open',  '&ldquo;');
+@define('txt_quote_double_close', '&rdquo;');
+@define('txt_apostrophe',		  '&rsquo;');
+@define('txt_prime',			  '&prime;');
+@define('txt_prime_double', 	  '&Prime;');
+@define('txt_ellipsis', 		  '&hellip;');
+@define('txt_emdash',			  '&mdash;');
+@define('txt_endash',			  '&ndash;');
+@define('txt_dimension',		  '&times;');
+@define('txt_trademark',		  '&trade;');
+@define('txt_registered',		  '&reg;');
+@define('txt_copyright',		  '&copy;');
 
 class Textile
 {
@@ -124,7 +124,7 @@ class Textile
 	var $glyph = array();
 	var $hu = '';
 	
-	var $ver = '2.0.0';
+	var $ver = '2.0.1';
 	var $rev = '$Rev: 2779 $';
 	
 	var $doc_root;
